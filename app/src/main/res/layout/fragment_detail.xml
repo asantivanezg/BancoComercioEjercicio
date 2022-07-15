@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp">
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            tools:text="nombre" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            tools:text="ejemplo@correo.com" />
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            tools:text="999999999" />
+
+        <TextView
+            android:id="@+id/tvPaginaWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            tools:text="www.ejemplo.com" />
+    </LinearLayout>
+</FrameLayout>
