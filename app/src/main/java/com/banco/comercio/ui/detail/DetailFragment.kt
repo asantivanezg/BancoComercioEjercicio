@@ -45,10 +45,10 @@ class DetailFragment : Fragment() {
 
     private fun init() {
         with(binding) {
-            tvNombre.text = user.nombre
-            tvEmail.text = user.email
-            tvTelefono.text = user.telefono
-            tvPaginaWeb.text = user.paginaWeb
+            etNombre.setText(user.nombre)
+            etEmail.setText(user.email)
+            etTelefono.setText(user.telefono)
+            etPaginaWeb.setText(user.paginaWeb)
         }
     }
 

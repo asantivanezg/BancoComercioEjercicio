@@ -9,7 +9,7 @@ class UserMapper : BaseMapper<UserRestEntity, User> {
             id = item.id,
             nombre = item.nombre,
             email = item.email,
-            telefono = item.email,
+            telefono = item.telefono,
             paginaWeb = item.paginaWeb
         )
     }

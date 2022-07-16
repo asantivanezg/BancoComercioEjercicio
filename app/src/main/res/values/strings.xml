@@ -2,4 +2,8 @@
     <string name="app_name">Banco Comercio Ejercicio</string>
     <string name="error">Ocurrió un problema</string>
     <string name="detail">Detalle</string>
+    <string name="name">Nombre:</string>
+    <string name="phone">Telefono</string>
+    <string name="webpage_hint">Página web</string>
+    <string name="email">Email</string>
 </resources>
