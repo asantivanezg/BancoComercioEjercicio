@@ -10,6 +10,7 @@
 
     <color name="background">#1656ccf2</color>
     <color name="border">#2D9CDB</color>
+    <color name="black_15">#26000000</color>
 
 
 </resources>
