@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">BancoEjercicio</string>
+    <string name="app_name">Banco Comercio Ejercicio</string>
     <string name="error">Ocurrió un problema</string>
+    <string name="detail">Detalle</string>
 </resources>
