@@ -9,6 +9,8 @@ import com.banco.comercio.domain.model.User
 import com.banco.comercio.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -18,8 +20,11 @@ class HomeViewModel @Inject constructor(private val repo: UserDataRepository) : 
     private val _userList = MutableLiveData<Resource<List<User>>>()
     val userList: LiveData<Resource<List<User>>> get() = _userList
 
+    var job: Job? = null
+
     fun getUserList() {
-        val job = viewModelScope.launch(Dispatchers.IO) {
+        job = viewModelScope.launch(Dispatchers.IO) {
+            ensureActive()
             _userList.postValue(Resource.loading())
             val res = repo.getUserList()
             _userList.postValue(res)

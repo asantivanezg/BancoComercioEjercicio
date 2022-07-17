@@ -46,6 +46,7 @@ class HomeFragment : Fragment(), UserAdapter.UserAdapterListener {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        homeViewModel.job?.cancel()
         _binding = null
     }
 
